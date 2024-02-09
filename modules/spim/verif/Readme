@@ -1,0 +1,2 @@
+vlogan -sverilog spim_tb.v  ../rtl/spim.v  ../../memss/rtl/sram_wrap.v   ../../memss/rtl/spram_hd_32x4096.v  ../rtl/spim_ahb.v ../rtl/SPI_Slave.v 
+vcs -debug spim
