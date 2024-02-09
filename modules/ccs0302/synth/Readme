@@ -1,0 +1,2 @@
+/opt/programs/synopsys/dc/2019.03-SP3/syn/P-2019.03-SP3/bin/dc_shell-t -no_gui -64bit -x "source -echo -verbose ./run_synth.tcl" -output_log_file ./synth_${DESIGN}_`${now}`.log
+
