@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<opml version="1.0">
+	<head>
+		<title>VCS dump file for DVE debugging</title>
+		<vcsVersion>E-2011.03</vcsVersion>
+		<dateCreated>Mon Mar  6 03:13:29 2017</dateCreated>
+	</head>
+	<body>
+		<!-- VCS compile options -->
+		<vcsCompileOptions text="/usr/synopsys/vcsmx/linux/bin/vcs1 -Mcc=gcc -Mcplusplus=g++ -Masflags=--32 -Mcfl= -pipe -m32 -O -I/usr/synopsys/vcsmx/include  -Mldflags=-melf_i386 -m32  -Mout=simv -Mamsrun= -Mvcsaceobjs= -Mcmodrun= -Mobjects= /usr/synopsys/vcsmx/linux/lib/librterrorinf.so /usr/synopsys/vcsmx/linux/lib/libsnpsmalloc.so  -Msaverestoreobj=/usr/synopsys/vcsmx/linux/lib/vcs_save_restore_new.o -Mcrt0= -Mcrtn= -Mcsrc= -Msyslibs=/usr/synopsys/vcsmx/linux/lib/ctype-stubs_32.a -ldl -lm  -uum gpcfg -mxunielab -uni_make -Xcbug=0x1 -uum -elaboration_options=/tmp/vcs_20170305231327_23518/elaboptfile_23518 -cm_xmldb +cli+4 +vcsd +itf+/usr/synopsys/vcsmx/linux/lib/vcsd.tab +vpi -debug=3 +memcbk +vpi -VHDLelab=-mxunielab -uni_make -nc -uum -elaboration_options /tmp/vcs_20170305231327_23518/elaboptfile_23518  -cm_xmldb -debug 3   -gen_obj -f simv.daidir/mxopt.db "/>
+		<!-- File list for the whole design -->
+		<fileList>
+			<file fid="0" path="/home/projects/vlsi/ccs0101/design/modules/crypto_lib/rtl/montgomery_mul.v" />
+			<file fid="2" path="/home/projects/vlsi/ccs0101/design/modules/crypto_lib/rtl/mod_mul_il.v" />
+			<file fid="4" path="/home/projects/vlsi/ccs0101/design/modules/gpcfg/rtl/gpcfg.v" />
+			<file fid="1" path="/home/projects/vlsi/ccs0101/design/modules/crypto_lib/verif/montgomery_mul_tb.v" />
+			<file fid="3" path="/home/projects/vlsi/ccs0101/design/modules/crypto_lib/rtl/montgomery_from_conv.v" />
+			<file fid="5" path="/home/projects/vlsi/ccs0101/design/modules/crypto_lib/verif/mod_mul_il_tb.v" />
+			<file fid="6" path="/home/projects/vlsi/ccs0101/design/modules/crypto_lib/verif/bin_ext_gcd_tb.v" />
+			<file fid="7" path="/home/projects/vlsi/ccs0101/design/modules/crypto_lib/verif/montgomery_wrap_tb.v" />
+			<file fid="8" path="/home/projects/vlsi/ccs0101/design/modules/crypto_lib/rtl/bin_ext_gcd.v" />
+			<file fid="9" path="/home/projects/vlsi/ccs0101/design/modules/crypto_lib/rtl/montgoemery_mul.v" />
+			<file fid="10" path="/home/projects/vlsi/ccs0101/design/modules/crypto_lib/rtl/montgomery_wrap.v" />
+			<file fid="11" path="/home/projects/vlsi/ccs0101/design/modules/crypto_lib/rtl/montgomery_to_conv.v" />
+		</fileList>
+		<!-- Include file list for the whole design -->
+		<includeFileList>
+		</includeFileList>
+		<!-- Encrypted codes list for the whole design -->
+		<encryptedCodesList>
+		</encryptedCodesList>
+		<!-- Inactive codes list for the whole design -->
+		<inactiveCodesList>
+		</inactiveCodesList>
+		<!-- Compile options UUM based -->
+		<langKeywords>
+			<svFiles fid="0-11" />
+		</langKeywords>
+		<!--  Case insensitive file list -->
+		<caseInsensitiveFiles fid="" />
+		<!-- Macro definition list for the whole design --> 
+		<macroDefinitionList>
+		</macroDefinitionList>
+		<!-- Macro value list for the whole design --> 
+		<macroValueList>
+		</macroValueList>
+	</body>
+</opml>

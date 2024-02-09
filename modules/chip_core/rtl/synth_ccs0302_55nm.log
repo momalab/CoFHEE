@@ -1,0 +1,232 @@
+Initializing gui preferences from file  /home/mtn2/.synopsys_dv_prefs.tcl
+dc_shell> man report_timing
+2.  Synopsys Commands                                        Command Reference
+                                 report_timing
+
+NAME
+       report_timing
+              Displays timing information about a design.
+
+SYNTAX
+       status report_timing
+               [-to to_list
+                | -rise_to rise_to_list
+                | -fall_to fall_to_list]
+               [-from from_list
+                | -rise_from rise_from_list
+                | -fall_from fall_from_list]
+               [-through through_list]
+               [-rise_through rise_through_list]
+               [-fall_through fall_through_list]
+               [-exclude exclude_list
+                | -rise_exclude rise_exclude_list
+                | -fall_exclude fall_exclude_list]
+               [-path_type short | full | full_clock | full_clock_expanded | only | end]
+               [-delay_type min | min_rise | min_fall | max | max_rise | max_fall]
+               [-nworst paths_per_endpoint]
+               [-max_paths max_path_count]
+               [-input_pins]
+               [-nets]
+               [-transition_time]
+               [-crosstalk_delta]
+               [-capacitance]
+               [-effective_capacitance]
+               [-attributes]
+               [-physical]
+               [-slack_greater_than greater_slack_limit]
+               [-slack_lesser_than lesser_slack_limit]
+               [-lesser_path max_path_delay]
+               [-greater_path min_path_delay]
+               [-loops]
+               [-enable_preset_clear_arcs]
+               [-significant_digits digits]
+               [-nosplit]
+               [-sort_by group | slack]
+               [-group group_name]
+               [-trace_latch_borrow]
+               [-derate]
+               [-normalized_slack]
+               [-scenarios scenario_list]
+               [-temperature]
+               [-voltage]
+               [-unique_pins]
+               [-start_end_pair]
+               [-variation]
+               [-ignore_infeasible_paths]
+
+   Data Types
+       to_list                 list
+       rise_to_list            list
+       fall_to_list            list
+       from_list               list
+       rise_from_list          list
+       fall_from_list          list
+       through_list            list
+       rise_through_list       list
+       fall_through_list       list
+       exclude_list            list
+       rise_exclude_list       list
+       fall_exclude_list       list
+       paths_per_endpoint      integer
+       max_path_count          integer
+       greater_slack_limit     float
+       lesser_slack_limit      float
+       max_path_delay          float
+       min_path_delay          float
+       digits                  integer
+       group_name              string
+       scenario_list           list
+
+ARGUMENTS
+       -to to_list
+              Reports  only the paths to the named pins, ports, or clocks.  If
+              you do not specify the -to option, the default is to report  the
+              longest  path to an output port if the design has no timing con-
+              straints.  If the design has timing constraints, the default  is
+              to  report  the path with the worst slack within each path group
+              if the -group option is not present.  If the  -group  option  is
+              given,  the  default  is to report the path with the worst slack
+              within the group specified by the -group option.
+
+       -rise_to rise_to_list
+              Same as the -to option, but applies only to paths rising at  the
+              endpoint.   If  a clock object is specified, this option selects
+              endpoints clocked by the named clock, but only  the  paths  cap-
+              tured  by  the  rising edge of the clock at clock source, taking
+              into account any logical inversions along the clock path.
+
+       -fall_to fall_to_list
+              Same as the -to option, but applies only to paths falling at the
+              endpoint.   If  a clock object is specified, this option selects
+              endpoints clocked by the named clock, but only  the  paths  cap-
+              tured by the falling edge of the clock at the clock source, tak-
+              ing into account any logical inversions along the clock path.
+
+       -from from_list
+              Reports only the paths from the named pins,  ports,  or  clocks.
+              If you do not specify the -from option, the default is to report
+              the longest path to an output port if the design has  no  timing
+              constraints.   If the design has timing constraints, the default
+              is to report the path with the  worst  slack  within  each  path
+              group if the -group option is not present.  If the -group option
+              is given, the default is to report the path with the worst slack
+              within the group specified by the -group option.
+
+       -rise_from rise_from_list
+              Same  as  the  -from option, except that the path must rise from
+              the objects specified.  If a clock  object  is  specified,  this
+              option  selects startpoints clocked by the named clock, but only
+              the paths launched by the rising edge of the clock at the  clock
+              source,  taking  into  account  any logical inversions along the
+              clock path.
+
+       -fall_from fall_from_list
+              Same as the -from option, except that the path  must  fall  from
+              the  objects  specified.   If  a clock object is specified, this
+              option selects startpoints clocked by the named clock, but  only
+              the paths launched by the falling edge of the clock at the clock
+              source, taking into account any  logical  inversions  along  the
+              clock path.
+
+       -through through_list
+              Reports  only  paths that pass through the named pins, ports, or
+              clocks.  If you do not specify the -through option, the  default
+              is  to  report  the longest path to an output port if the design
+              has no timing constraints.  If the design does have timing  con-
+              straints, the default is to report the path with the worst slack
+              within each path group if the -group option is not present.   If
+              the  -group  option  is given, the default is to report the path
+              with the worst slack within the group specified  by  the  -group
+              option.
+
+              If  you  specify  the  -through  option  only one time, the tool
+              reports only the paths that travel through one or  more  of  the
+              objects  in  the list.  You can specify the -through option more
+              than one time in one command invocation.  For  a  discussion  of
+              the  use  of multiple -through options, see the DESCRIPTION sec-
+              tion.
+
+       -rise_through rise_through_list
+              Reports only paths with a rising  transition  at  the  specified
+              objects.   This  option  is similar to the -through option.  You
+              can specify the -rise_through option more than  one  time  in  a
+              single   command  invocation.   For  a  discussion  of  multiple
+              -through, -rise_through,  and  -fall_through  options,  see  the
+              DESCRIPTION section.
+
+       -fall_through fall_through_list
+              Reports  only  paths  with a falling transition at the specified
+              objects.  This option is similar to the  -through  option.   You
+              can  specify  the  -fall_through  option more than one time in a
+              single  command  invocation.  For  a  discussion   of   multiple
+              -through,  -rise_through,  and  -fall_through  options,  see the
+              DESCRIPTION section.
+
+       -exclude exclude_list
+              Prevents reporting of all data paths from/through/to  the  named
+              pins, ports, nets, and cell instances. Any data path that starts
+              from, contains, or ends on a  listed  object  is  excluded  from
+              reporting.   If  you  specify  a  cell instance, data paths that
+              include any pin of that cell instance are excluded. This  option
+              has higher precedence than the -from, -through, -to, and similar
+              options.
+
+              The exclusion does not apply  to  clock  paths,  even  when  the
+              -path_type  full_clock  or -path_type full_clock_expanded option
+              is  used.  It  does  not  apply  to  borrowing  path  from   the
+              -trace_latch_borrow option.
+
+              This option is not applied to clock pins.
+
+       -rise_exclude rise_exclude_list
+              Same as the -exclude option, but applies only to paths rising at
+              the named pins, ports, nets, and cell instances.
+
+       -fall_exclude fall_exclude_list
+              Same as the -exclude option, but applies only to  paths  falling
+              at the named pins, ports, nets, and cell instances.
+
+       -path_type short | full | full_clock | full_clock_expanded | only | end
+              Specifies  how to display the timing path.  By default, the full
+              path is displayed.  The following values are valid:
+
+               o If full_clock is specified, the  report  is  similar  to  the
+                report you get with full but also reports the full clock paths
+                for propagated clocks.
+
+               o If full_clock_expanded is specified, the report is similar to
+                the  report  you get with full_clock but also reports the full
+                clock path from the primary clock  to  the  related  generated
+                clock source.
+
+               o  If  short  is  specified, only startpoints and endpoints are
+                displayed.
+
+               o If only is specified, only the path is displayed without  the
+                accompanying required-time and slack calculation.
+
+               o  If  end  is  specified,  the report has a column format that
+                shows one line for each path, showing only the  endpoint  path
+                total, required-time, and slack.
+
+       -delay_type min | min_rise | min_fall | max | max_rise | max_fall
+              Specifies the path type at the endpoint.  The default is max.
+
+       -nworst paths_per_endpoint
+              Specifies  the  maximum  number of paths to report per endpoint.
+              The default is 1, which reports only the single worst path  end-
+              ing at a given endpoint.
+
+       -max_paths max_path_count
+              Specifies  the  number  of  paths  to  report  per path group by
+              default, or the number of paths to report for the  whole  design
+              if  the  timing_report_fast_mode  variable  is  set to true. The
+              default is 1.
+
+       -input_pins
+              Shows input pins in the path report.  The  default  is  to  show
+dc_shell> 
+dc_shell> exit
+
+Thank you...
+
