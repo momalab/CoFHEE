@@ -1,0 +1,14 @@
+verif
+vi ./testcases/intelunlock_v2_2_dac.v 
+cd ~/Desktop/
+cp _stdin_.pdf unlock_0.pdf
+cp _stdin_.pdf unlock_1.pdf
+cp _stdin_.pdf unlock_0_color.pdf
+cd -
+acroread _stdin_.pdf 
+./run_test.sh -test intelunlock_v2_2_dac.v -gui 1
+
+./run_test.sh -test intelunlock_v2_2_dac.v 
+./simv -gui
+# OPen waveform window
+# execute ./dac3.inter.vpd.tcl

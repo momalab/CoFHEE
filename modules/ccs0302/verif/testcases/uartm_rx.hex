@@ -1,0 +1,2 @@
+uartm_write (.addr(GPCFG_GPTA_CFG),     .data (32'h64));
+uartm_read  (.addr(GPCFG_GPTA_CFG));

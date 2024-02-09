@@ -1,0 +1,7 @@
+uartm_write (.addr(GPCFG_GPTA_CFG),     .data (32'h64));
+uartm_write (.addr(GPCFG_GPTB_CFG),     .data (32'h64));
+uartm_write (.addr(GPCFG_GPTC_CFG),     .data (32'h64));
+uartm_write (.addr(GPCFG_GPT_EN),       .data (32'h010101));
+uartm_write (.addr(GPCFG_WDT_CFG),      .data (32'h100));
+uartm_write (.addr(GPCFG_WDT_NMI_CFG),  .data (32'h80));
+uartm_write (.addr(GPCFG_WDT_EN),       .data (32'h1));

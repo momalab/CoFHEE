@@ -1,0 +1,12 @@
+uartm_write (.addr(GPCFG_UARTS_TXDATA),     .data (32'hAAAAAAAA));
+uartm_write (.addr(GPCFG_UARTS_TXSEND),     .data (32'h1));
+  repeat (12) begin
+    @(posedge UART_CLK);
+  end
+uartm_write (.addr(GPCFG_UARTS_TXDATA),     .data (32'hCCCCCCCC));
+uartm_write (.addr(GPCFG_UARTS_TXSEND),     .data (32'h1));
+  repeat (12) begin
+    @(posedge UART_CLK);
+  end
+uartm_write (.addr(GPCFG_UARTS_TXDATA),     .data (32'h55555555));
+uartm_write (.addr(GPCFG_UARTS_TXSEND),     .data (32'h1));
