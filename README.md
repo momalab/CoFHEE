@@ -39,13 +39,13 @@ To find all the file dependencies, refer to
 
 This is also the top-level verification script and uses Synopsys VCS for simulation. The run command for simulation is:
 
-`./run_test.sh -test <testcase name in [./modules/ccs0302/verif/testcases](https://github.com/momalab/CoFHEE/blob/main/modules/ccs0302/verif/testcases) directory>`
+./run_test.sh -test <testcase name in [./modules/ccs0302/verif/testcases](https://github.com/momalab/CoFHEE/blob/main/modules/ccs0302/verif/testcases) directory>
 
 Ex: `./run_test.sh -test ntt.v`
 
 The top-level synthesis script using Synopsys DC is at [./modules/ccs0302/synth/run_synth.tcl](https://github.com/momalab/CoFHEE/blob/main/modules/ccs0302/synth/run_synth.tcl). The run command for synthesis is:
 
-`dc_shell-t -no_gui -64bit -x "source -echo -verbose ./run_synth.tcl" -output_log_file ./synth_${DESIGN}_`${now}`.log`
+`dc_shell-t -no_gui -64bit -x "source -echo -verbose ./run_synth.tcl" -output_log_file ./synth.log`
 
 ## License
 You can use our RTL files under the [MIT license](https://www.mit.edu/~amini/LICENSE.md). If you wish to acknowledge or reference our work, please use the below citation:
