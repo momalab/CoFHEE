@@ -30,13 +30,17 @@ Please note that the RTL files for CortexM0 are not included in the repo because
 
 ## Repo Details
 This repo contains RTL files, verification setup, and synthesis setup for CoFHEE. The top-level file is 
+
 [./modules/ccs0302/rtl/ccs0302.v](https://github.com/momalab/CoFHEE/blob/main/modules/ccs0302/rtl/ccs0302.v).
 
 To find all the file dependencies, refer to
+
 [./modules/ccs0302/verif/run_test.sh](https://github.com/momalab/CoFHEE/blob/main/modules/ccs0302/verif/run_test.sh)
 
 This is also the top-level verification script and uses Synopsys VCS for simulation. The run command for simulation is:
+
 `./run_test.sh -test <testcase name in [./modules/ccs0302/verif/testcases](https://github.com/momalab/CoFHEE/blob/main/modules/ccs0302/verif/testcases) directory>`
+
 Ex: `./run_test.sh -test ntt.v`
 
 The top-level synthesis script using Synopsys DC is at [./modules/ccs0302/synth/run_synth.tcl](https://github.com/momalab/CoFHEE/blob/main/modules/ccs0302/synth/run_synth.tcl). The run command for synthesis is:
