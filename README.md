@@ -1,6 +1,6 @@
 # A Co-processor for Fully Homomorphic Encryption Execution (CoFHEE)
 
-CoFHEE is the first silicon-proven co-processor for low-level polynomial operations targeting Fully Homomorphic Encryption (FHE) execution. It features implementations of fundamental polynomial operations, including polynomial addition and subtraction, Hadamard product, and Number Theoretic Transform (NTT), which underlie most higher-level FHE primitives. The current version of CoFHEE can natively support polynomial degrees of up to $N = 2^{13}$ with a coefficient size of 128 bits and has been fabricated and silicon-verified using 55nm CMOS technology.
+CoFHEE is the first silicon-proven hardware accelerator for low-level polynomial operations targeting Fully Homomorphic Encryption (FHE) execution. It features implementations of fundamental polynomial operations, including polynomial addition and subtraction, Hadamard product, and Number Theoretic Transform (NTT), which underlie most higher-level FHE primitives. The current version of CoFHEE can natively support polynomial degrees of up to $N = 2^{13}$ with a coefficient size of 128 bits and has been fabricated and silicon-verified using 55nm CMOS technology.
 
 ## Highlights :
 * Max modulus size: 128-bit.
