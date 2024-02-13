@@ -58,7 +58,7 @@ If you wish to acknowledge or reference our work, please use the below citations
 
 Nabeel, Mohammed, et al. "CoFHEE: A co-processor for fully homomorphic encryption execution." 2023 Design, Automation & Test in Europe Conference & Exhibition (DATE). IEEE, 2023.
 
-M. Nabeel et al., "Silicon-proven ASIC Design for the Polynomial Operations of Fully Homomorphic Encryption," in IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems, doi: 10.1109/TCAD.2024.3359526.
+Nabeel, Mohammed, et al. "Silicon-proven ASIC design for the polynomial operations of Fully Homomorphic Encryption." IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems (2024).
 
 
  
