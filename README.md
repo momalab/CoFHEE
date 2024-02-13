@@ -47,8 +47,8 @@ The top-level synthesis script using Synopsys DC is at [./modules/ccs0302/synth/
 
 `dc_shell-t -no_gui -64bit -x "source -echo -verbose ./run_synth.tcl" -output_log_file ./synth.log`
 
-# Request a copy of CoPHEE
-A limited number of fabricated ASICs of CoFHEE can be sent to researchers. Please [e-mail the MoMA Lab director](mailto:michail.maniatakos+cophee@nyu.edu) with a request.
+# Request for a CoFHEE chip
+A limited number of fabricated ASICs of CoFHEE and Python APIs to communicate to it from an external host can be sent to researchers. Please [e-mail the MoMA Lab director](mailto:michail.maniatakos+cophee@nyu.edu) with a request.
 
 ## License
 You can use our RTL files under the [MIT license](https://www.mit.edu/~amini/LICENSE.md). 
