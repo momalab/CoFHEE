@@ -47,8 +47,16 @@ The top-level synthesis script using Synopsys DC is at [./modules/ccs0302/synth/
 
 `dc_shell-t -no_gui -64bit -x "source -echo -verbose ./run_synth.tcl" -output_log_file ./synth.log`
 
+# Request a copy of CoPHEE
+A limited number of fabricated ASICs of CoFHEE can be sent to researchers. Please [e-mail the MoMA Lab director](mailto:michail.maniatakos+cophee@nyu.edu) with a request.
+
 ## License
-You can use our RTL files under the [MIT license](https://www.mit.edu/~amini/LICENSE.md). If you wish to acknowledge or reference our work, please use the below citation:
+You can use our RTL files under the [MIT license](https://www.mit.edu/~amini/LICENSE.md). 
+
+## Cite us!
+If you wish to acknowledge or reference our work, please use the below citations:
+
+Nabeel, Mohammed, et al. "CoFHEE: A co-processor for fully homomorphic encryption execution." 2023 Design, Automation & Test in Europe Conference & Exhibition (DATE). IEEE, 2023.
 
 M. Nabeel et al., "Silicon-proven ASIC Design for the Polynomial Operations of Fully Homomorphic Encryption," in IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems, doi: 10.1109/TCAD.2024.3359526.
 
