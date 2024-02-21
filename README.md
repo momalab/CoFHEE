@@ -46,6 +46,8 @@ Ex: `./run_test.sh -test ntt.v`
 The top-level synthesis script using Synopsys DC is at [./modules/ccs0302/synth/run_synth.tcl](https://github.com/momalab/CoFHEE/blob/main/modules/ccs0302/synth/run_synth.tcl). The run command for synthesis is:
 
 `dc_shell-t -no_gui -64bit -x "source -echo -verbose ./run_synth.tcl" -output_log_file ./synth.log`
+## Documentation
+[CoFHEE](https://arxiv.org/abs/2204.08742)
 
 # Request for a CoFHEE chip
 A limited number of fabricated ASICs of CoFHEE and Python APIs to communicate to it from an external host can be sent to researchers. Please [e-mail the MoMA Lab director](mailto:michail.maniatakos+cophee@nyu.edu) with a request.
