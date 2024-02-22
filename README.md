@@ -50,10 +50,10 @@ The top-level synthesis script using Synopsys DC is at [./modules/ccs0302/synth/
 [CoFHEE](https://arxiv.org/abs/2204.08742)
 
 # Request for a CoFHEE chip
-A limited number of fabricated ASICs of CoFHEE and Python APIs to communicate to it from an external host can be sent to researchers. Please [e-mail the MoMA Lab director](mailto:michail.maniatakos+cophee@nyu.edu) with a request.
+A limited number of fabricated ASICs of CoFHEE and Python APIs to communicate to it from an external host can be sent to researchers. Please [e-mail the MoMA Lab director](mailto:michail.maniatakos+cofhee@nyu.edu) with a request.
 
 ## License
-You can use our RTL files under the [MIT license](https://www.mit.edu/~amini/LICENSE.md). 
+You can use our RTL files under the [GPLv3 license](https://www.gnu.org/licenses/gpl-3.0.en.html). 
 
 ## Cite us!
 If you wish to acknowledge or reference our work, please use the below citations:
