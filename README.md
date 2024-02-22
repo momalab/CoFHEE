@@ -58,9 +58,28 @@ You can use our RTL files under the [GPLv3 license](https://www.gnu.org/licenses
 ## Cite us!
 If you wish to acknowledge or reference our work, please use the below citations:
 
-Nabeel, Mohammed, et al. "CoFHEE: A co-processor for fully homomorphic encryption execution." 2023 Design, Automation & Test in Europe Conference & Exhibition (DATE). IEEE, 2023.
+1) Nabeel, Mohammed, et al. "CoFHEE: A co-processor for fully homomorphic encryption execution." 2023 Design, Automation & Test in Europe Conference & Exhibition (DATE). IEEE, 2023.
 
-Nabeel, Mohammed, et al. "Silicon-proven ASIC design for the polynomial operations of Fully Homomorphic Encryption." IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems (2024).
+Bibtex:
+@inproceedings{nabeel2023cofhee,
+  title={CoFHEE: A co-processor for fully homomorphic encryption execution},
+  author={Nabeel, Mohammed and Soni, Deepraj and Ashraf, Mohammed and Gebremichael, Mizan Abraha and Gamil, Homer and Chielle, Eduardo and Karri, Ramesh and Sanduleanu, Mihai and Maniatakos, Michail},
+  booktitle={2023 Design, Automation \& Test in Europe Conference \& Exhibition (DATE)},
+  year={2023},
+  organization={IEEE}
+}
+
+2) Nabeel, Mohammed, et al. "Silicon-proven ASIC design for the polynomial operations of Fully Homomorphic Encryption." IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems (2024).
+
+Bibtex:
+@article{nabeel2024silicon,
+  title={Silicon-proven ASIC design for the polynomial operations of Fully Homomorphic Encryption},
+  author={Nabeel, Mohammed and Gamil, Homer and Soni, Deepraj and Ashraf, Mohammed and Gebremichael, Mizan Abraha and Chielle, Eduardo and Karri, Ramesh and Sanduleanu, Mihai and Maniatakos, Michail},
+  journal={IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems},
+  year={2024},
+  publisher={IEEE}
+}
+
 
 
  
